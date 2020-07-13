@@ -29,7 +29,7 @@ In the case of malicious code, the attacker will also try to obscure the real ef
 slowly such that individual commits are less suspect.
 The attack above was executed in multiple steps.
 
-One way to mitigate an attack like this is to build a trusted identity system for maintainers of critical open source
+One way to help mitigate and potentially detect an attack like this is to build a trusted identity system for maintainers of critical open source
 projects. Highly critical projects should be encouraged to verify the identity of their maintainers, and anyone with
 administrative permissions on their SCM, CI or artifact management systems.
 Later, they may make use of this identity system to flag contributions that should warrant closer review.
@@ -46,6 +46,8 @@ The public record could be modelled after the similar effort to provide open aud
 in the [certificate transparency](https://www.certificate-transparency.org/) project.
 
 ### Goals
+
+![dog_meme](./dog_meme.jpg)
 
 * Give open source maintainers a way to do work under their chosen name, representing their real employers in secure ways.
 * Give open source projects tools and infrastructure to verify the identities of their maintainers.
@@ -67,6 +69,17 @@ This section contains possible attacks we can try to mitigate, prevent or detect
 * Malicious/Nefarious individuals get maintainer permissions and starts making making commits or pushes to a registry
 * Duplicate accounts, self-reviewing code
 * Identity spoofing: claiming you work for a specific organization that you do not, or are a specific individual that you are not
+
+## Necessary Human Use Cases to Support
+
+* Change / leave employer
+* Aggregate identities in multiple systems in a single signature
+* Change name, want to carry over identity
+* Change name, do not want to carry over identity
+* Expiration on attestations? (I checked this email at time X, need to re-verify every Y months)
+* Explicit revocation of attestations (Y no longer works for X)
+* Rotate key for one/all systems
+* Annotate repair of bad actor's changes
 
 ## Prior Work
 
