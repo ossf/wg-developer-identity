@@ -97,7 +97,7 @@ The public calendar is available here: https://calendar.google.com/calendar/r?ci
 
 ### Communications
 
-We have a public email list available here: https://groups.google.com/forum/#!forum/ossf-wg-developer-identity
+We have a [public email list](https://lists.openssf.org/g/openssf-wg-dev-identity). [Manage your subscriptions to Open SSF mailing lists](https://lists.openssf.org/g/main/subgroups).
 
 #### Notes and Agendas
 
